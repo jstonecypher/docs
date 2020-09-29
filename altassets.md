@@ -98,7 +98,7 @@ This is the happy-path end state.</p>
 <ul>
 <li>Status: REJECT - From IN REVIEW or QC status, the processor or QC manager can Reject the request</li>
 <li>Status: CANCEL - From IN REVIEW or QC status, the processor or QC manager can Cancel the request.<br>
-<img src="https://opusbank.sharepoint.com/:i:/s/PENSCOTrustCompany/pegasus/Eels1BG4o7dNrMf47oazpqsB_XKdwaMcI89qgDPFEz1onQ?e=kvb9rk" alt="enter image description here"></li>
+<img src="https://github.com/jstonecypher/docs/blob/master/AltAssets-Commitment.png" alt="enter image description here"></li>
 </ul>
 <h2 id="new-purchases">New Purchases</h2>
 <p>Processors can start a new purchase for an asset a client does not currently own.</p>
