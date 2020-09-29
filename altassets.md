@@ -51,8 +51,9 @@
 <p>Workflow varies for each request type: Commitment, New Purchase, Additional Purchase, Capital Call, Exchange, Asset, and Transfer Review.</p>
 <h2 id="commitments">Commitments</h2>
 <p>Processors can start a commitment-only client request.</p>
-<p>On the Asset Detail screen, the processor chooses <strong>Create &gt; Commitment</strong>, and the Start New Commitment screen displays:</p>
-<p>On the Start New Commitment screen, the processor completes the required fields and clicks <strong>Create Request</strong>. The system validates required fields are completed:</p>
+<p>On the Asset Detail screen, the processor chooses <strong>Create &gt; Commitment</strong>, and the Start New Commitment screen displays:<br>
+<img src="https://github.com/jstonecypher/docs/blob/master/AltAssets-Commitment.png" alt="enter image description here"><br>
+On the Start New Commitment screen, the processor completes the required fields and clicks <strong>Create Request</strong>. The system validates required fields are completed:</p>
 <ul>
 <li>Asset</li>
 <li>Account #</li>
@@ -98,7 +99,7 @@ This is the happy-path end state.</p>
 <ul>
 <li>Status: REJECT - From IN REVIEW or QC status, the processor or QC manager can Reject the request</li>
 <li>Status: CANCEL - From IN REVIEW or QC status, the processor or QC manager can Cancel the request.<br>
-<img src="https://github.com/jstonecypher/docs/blob/master/AltAssets-Commitment.png" alt="enter image description here"></li>
+<img src="https://github.com/jstonecypher/docs/blob/master/AltAssets-Commitments-StateDiagram.png" alt="enter image description here"></li>
 </ul>
 <h2 id="new-purchases">New Purchases</h2>
 <p>Processors can start a new purchase for an asset a client does not currently own.</p>
