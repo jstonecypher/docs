@@ -9,13 +9,13 @@
 <p>PE processors can view and search their own work queue and the queues of the rest of their team. Processors can open requests, gather the required information and documents, check off items on the checklist of requirements for that request type, and finally send the request to Quality Control (QC). QC can Accept or Return the request to the original processor and add notes if needed. If the request involves a transaction greater than $300,000, another reviewer – QC2 – reviews the requests and either Accepts or Returns it to the original processor.</p>
 <p>Once the request is Accepted by QC (and QC2 where needed), its path varies by request type:</p>
 <ul>
-<li>Assets - Information is sent to Innotrust, and then the processor marks the request Complete.</li>
-<li>Commitments - The processor prints and sends any necessary documents to the client or asset sponsor, and then marks the request Complete.</li>
-<li>New Purchases - Information is sent to Innotrust, the processor prints/sends out documents, waits for the signed confirmation documents to be returned, and then marks the request Complete.</li>
-<li>Capital Calls - Information is sent to Innotrust, and then the processor marks the request Complete.</li>
-<li>Additional Purchases -  Information is sent to Innotrust, the processor prints/sends out documents, and then marks the request Complete.</li>
-<li>Exchanges -  Information is sent to Innotrust, the processor prints/sends out documents, and then marks the request Complete.</li>
-<li>Transfer Reviews - The processor prints/sends out documents, and then marks the request Complete, enabling it to continue its path through the Transfers Admin workflow.</li>
+<li><strong>Assets</strong> - Information is sent to Innotrust, and then the processor marks the request Complete.</li>
+<li><strong>Commitments</strong> - The processor prints and sends any necessary documents to the client or asset sponsor, and then marks the request Complete.</li>
+<li><strong>New Purchases</strong> - Information is sent to Innotrust, the processor prints/sends out documents, waits for the signed confirmation documents to be returned, and then marks the request Complete.</li>
+<li><strong>Capital Calls</strong> - Information is sent to Innotrust, and then the processor marks the request Complete.</li>
+<li><strong>Additional Purchases</strong> -  Information is sent to Innotrust, the processor prints/sends out documents, and then marks the request Complete.</li>
+<li><strong>Exchanges</strong> -  Information is sent to Innotrust, the processor prints/sends out documents, and then marks the request Complete.</li>
+<li><strong>Transfer Reviews</strong> - The processor prints/sends out documents, and then marks the request Complete, enabling it to continue its path through the Transfers Admin workflow.</li>
 </ul>
 <p>Users also have the ability to add new sponsors, and admins have the ability to set permissions and the roles of other users.</p>
 <p>System Context Diagram</p>
@@ -51,22 +51,22 @@
 <p>Workflow varies for each request type: Commitment, New Purchase, Additional Purchase, Capital Call, Exchange, Asset, and Transfer Review.</p>
 <h2 id="commitments">Commitments</h2>
 <p>Processors can start a commitment-only client request.</p>
-<p>On the Asset Detail screen, the processor chooses Create &gt; Commitment., and the Start New Commitment screen displays:</p>
-<p>On the Start New Commitment screen, the processor completes the required fields and clicks Create Request. The system validates required fields are completed:</p>
+<p>On the Asset Detail screen, the processor chooses <strong>Create &gt; Commitment</strong>, and the Start New Commitment screen displays:</p>
+<p>On the Start New Commitment screen, the processor completes the required fields and clicks <strong>Create Request</strong>. The system validates required fields are completed:</p>
 <ul>
 <li>Asset</li>
 <li>Account #</li>
 </ul>
 <p>If validation fails, the processor sees a message detailing the failed validation, and they are returned to the Create screen.  If validation succeeds, the request moves into IN REVIEW status, causing it to appear in the processor’s queue.</p>
-<p><strong>Status: IN REVIEW</strong></p>
-<p>The processor sees the request in their queue, and double-clicks to open it in the Review screen.</p>
+<p><strong>Status: IN REVIEW</strong><br>
+The processor sees the request in their queue, and double-clicks to open it in the Review screen.</p>
 <p>Available Actions:</p>
 <ul>
-<li>SendToQC - Moves the request into QC status.</li>
-<li>Reject - Moves the request into REJECT status.</li>
-<li>Cancel - Moves the request into CANCEL status.</li>
+<li><strong>SendToQC</strong> - Moves the request into QC status.</li>
+<li><strong>Reject</strong> - Moves the request into REJECT status.</li>
+<li><strong>Cancel</strong> - Moves the request into CANCEL status.</li>
 </ul>
-<p>The processor enters the Funding Method information, uploads and accepts Documents, answers the Checklist questions, and clicks SendToQC. The system validates:</p>
+<p>The processor enters the Funding Method information, uploads and accepts Documents, answers the Checklist questions, and clicks <strong>SendToQC</strong>. The system validates:</p>
 <ul>
 <li>Asset(s) have status of QC, Processing, or Accepted.</li>
 <li>Request has a Funding Method, and the method’s related fields are completed</li>
@@ -76,33 +76,34 @@
 </ul>
 <p>If validation fails, the processor sees a message detailing the validations that have failed, and they are returned to the Review page. The request remains in IN REVIEW status and remains in the processor’s queue.</p>
 <p>If validation succeeds, the request moves into QC status.</p>
-<p><strong>Status: QC</strong></p>
-<p>When the request enters QC status, it is unassigned. The QC processor sees the request in their queue, and either assigns it to another QC processor or opens it in the QC screen.</p>
+<p><strong>Status: QC</strong><br>
+When the request enters QC status, it is unassigned. The QC processor sees the request in their queue, and either assigns it to another QC processor or opens it in the QC screen.</p>
 <p>Available Actions:</p>
 <ul>
-<li>Accept - Moves the request into EXECUTION status.</li>
-<li>Return to Reviewer - Moves the request to IN REVIEW status and reassigns it to the initial reviewer.</li>
-<li>Reject - Moves the request into REJECT status.</li>
-<li>Cancel - Moves the request into CANCEL status.</li>
+<li><strong>Accept</strong> - Moves the request into EXECUTION status.</li>
+<li><strong>Return to Reviewer</strong> - Moves the request to IN REVIEW status and reassigns it to the initial reviewer.</li>
+<li><strong>Reject</strong> - Moves the request into REJECT status.</li>
+<li><strong>Cancel</strong> - Moves the request into CANCEL status.</li>
 </ul>
-<p>When the QC processor clicks Accept, the system validates that the asset is in ACCEPTED status, and then moves the request into EXECUTION status.</p>
-<p><strong>Status: EXECUTION</strong></p>
-<p>The initial processor sees the request in their queue in EXECUTION status and then has time to print/send any necessary documents.  Once the documents are sent (or If no documentation is needed), the processor clicks Complete, moving the request into COMPLETE status.</p>
+<p>When the QC processor clicks <strong>Accept</strong>, the system validates that the asset is in ACCEPTED status, and then moves the request into EXECUTION status.</p>
+<p><strong>Status: EXECUTION</strong><br>
+The initial processor sees the request in their queue in EXECUTION status and then has time to print/send any necessary documents.  Once the documents are sent (or If no documentation is needed), the processor clicks <strong>Complete</strong>, moving the request into COMPLETE status.</p>
 <p>Available actions:</p>
 <ul>
-<li>Complete - Moves the request into COMPLETE status.</li>
+<li><strong>Complete</strong> - Moves the request into COMPLETE status.</li>
 </ul>
-<p><strong>Status: COMPLETE</strong></p>
-<p>This is the happy-path end state.</p>
+<p><strong>Status: COMPLETE</strong><br>
+This is the happy-path end state.</p>
 <p><strong>Exception States</strong></p>
 <ul>
 <li>Status: REJECT - From IN REVIEW or QC status, the processor or QC manager can Reject the request</li>
-<li>Status: CANCEL - From IN REVIEW or QC status, the processor or QC manager can Cancel the request.</li>
+<li>Status: CANCEL - From IN REVIEW or QC status, the processor or QC manager can Cancel the request.<br>
+<img src="https://opusbank.sharepoint.com/:i:/s/PENSCOTrustCompany/pegasus/Eels1BG4o7dNrMf47oazpqsB_XKdwaMcI89qgDPFEz1onQ?e=kvb9rk" alt="enter image description here"></li>
 </ul>
 <h2 id="new-purchases">New Purchases</h2>
 <p>Processors can start a new purchase for an asset a client does not currently own.</p>
-<p>On the Asset Detail screen, the processor chooses Create &gt; Purchase, and the Start New Purchase screen displays.</p>
-<p>On the Start New Purchase screen, the processor completes the required fields and clicks Create Request. The system validates required fields are completed:</p>
+<p>On the Asset Detail screen, the processor chooses <strong>Create &gt; Purchase</strong>, and the Start New Purchase screen displays.</p>
+<p>On the Start New Purchase screen, the processor completes the required fields and clicks <strong>Create Request</strong>. The system validates required fields are completed:</p>
 <ul>
 <li>Asset</li>
 <li>Account #</li>
@@ -112,11 +113,11 @@
 <p>The processor sees the request in their queue, and double-clicks to open it in the Review screen.</p>
 <p>Available Actions:</p>
 <ul>
-<li>SendToQC - Moves the request into QC status.</li>
-<li>Reject - Moves the request into REJECT status.</li>
-<li>Cancel - Moves the request into CANCEL status.</li>
+<li><strong>SendToQC</strong> - Moves the request into QC status.</li>
+<li><strong>Reject</strong> - Moves the request into REJECT status.</li>
+<li><strong>Cancel</strong> - Moves the request into CANCEL status.</li>
 </ul>
-<p>The processor enters the Funding Method information, uploads and accepts Documents, answers the Checklist questions, and clicks SendToQC. The system validates:</p>
+<p>The processor enters the Funding Method information, uploads and accepts Documents, answers the Checklist questions, and clicks <strong>SendToQC</strong>. The system validates:</p>
 <ul>
 <li>Request has a Funding Method, and the method’s related fields are completed</li>
 <li>Related account is open in ODS</li>
@@ -131,34 +132,34 @@
 <p>When the request enters QC status, it is unassigned. The QC processor sees the request in their queue, and either assigns it to another QC processor or opens it in the QC screen.</p>
 <p>Available Actions:</p>
 <ul>
-<li>Accept (This action is available only if the amount is less than $300,000) - Moves the request into PROCESSING status.</li>
-<li>SendToQC (This action is available only if the amount is greater than $300,000) - Moves the request into QC2 status.</li>
-<li>Return - Moves the request back into IN REVIEW status</li>
-<li>Reject - Moves the request into REJECT status.</li>
-<li>Cancel - Moves the request into CANCEL status.</li>
+<li><strong>Accept</strong> (This action is available only if the amount is less than $300,000) - Moves the request into PROCESSING status.</li>
+<li><strong>SendToQC</strong> (This action is available only if the amount is greater than $300,000) - Moves the request into QC2 status.</li>
+<li><strong>Return</strong> - Moves the request back into IN REVIEW status</li>
+<li><strong>Reject</strong> - Moves the request into REJECT status.</li>
+<li><strong>Cancel</strong> - Moves the request into CANCEL status.</li>
 </ul>
-<p>When the QC processor clicks Accept or SendToQC, the system validates that the asset is in ACCEPTED status, and then moves the request into EXECUTION or QC2 status.</p>
+<p>When the QC processor clicks <strong>Accept</strong> or <strong>SendToQC</strong>, the system validates that the asset is in ACCEPTED status, and then moves the request into EXECUTION or QC2 status.</p>
 <p><strong>Status: QC2</strong></p>
-<p>Requests go through this status only if the amount is greater than $300,000. In such instances, the first QC cannot accept the request; they can only SendToQC, moving it to QC2 status.</p>
+<p>Requests go through this status only if the amount is greater than $300,000. In such instances, the first QC cannot accept the request; they can only <strong>SendToQC</strong>, moving it to QC2 status.</p>
 <p>When the request enters QC2 status, it is unassigned. The QC2 processor sees the request and either assigns it to another QC processor or opens it in the QC screen.</p>
 <p>Available Actions:</p>
 <ul>
-<li>Accept - Moves the request into PROCESSING status.</li>
-<li>Return - Moves the request chase back into IN REVIEW status.</li>
-<li>Reject - Moves the request into REJECT status.</li>
-<li>Cancel - Moves the request into CANCEL status.</li>
+<li><strong>Accept</strong> - Moves the request into PROCESSING status.</li>
+<li><strong>Return</strong> - Moves the request chase back into IN REVIEW status.</li>
+<li><strong>Reject</strong> - Moves the request into REJECT status.</li>
+<li><strong>Cancel</strong> - Moves the request into CANCEL status.</li>
 </ul>
 <p><strong>Status: PROCESSING</strong></p>
 <p>Requests go into this status after QC or QC2 accept the request.  In PROCESSING status, the request is sent to Innotrust (BuyRec and Disbursement) and then automatically moved into EXECUTION status, causing it to appear in the processor’s queue.</p>
 <p><strong>Status: EXECUTION</strong></p>
-<p>The initial processor sees the request in their queue in EXECUTION status and then has time to print/send any necessary documents.  Once the documents are sent (or If no documentation is needed), the processor clicks Awaiting Confirmation, moving the request into PENDING CONFIRMATION status.</p>
+<p>The initial processor sees the request in their queue in EXECUTION status and then has time to print/send any necessary documents.  Once the documents are sent (or If no documentation is needed), the processor clicks <strong>Awaiting Confirmation</strong>, moving the request into PENDING CONFIRMATION status.</p>
 <p><strong>Status: PENDING CONFIRMATION</strong></p>
-<p>Once documents have been received from the client (or if no documentation is needed), the processor clicks Complete, moving the request into COMPLETE status, and sending an update to Innotrust to move the shares from PENDING to BOOK SHARES.</p>
+<p>Once documents have been received from the client (or if no documentation is needed), the processor clicks <strong>Complete</strong>, moving the request into COMPLETE status, and sending an update to Innotrust to move the shares from PENDING to BOOK SHARES.</p>
 <p>Pending Confirmation is the equivalent of Follow-Up.</p>
 <p>Available actions:</p>
 <ul>
-<li>Complete - Moves the request into COMPLETE status.</li>
-<li>Resign - Moves the request into RESIGNED status (This is not common).</li>
+<li><strong>Complete</strong> - Moves the request into COMPLETE status.</li>
+<li><strong>Resign</strong> - Moves the request into RESIGNED status (This is not common).</li>
 </ul>
 <p><strong>Status: COMPLETE</strong></p>
 <p>This is the happy-path end state.</p>
@@ -170,8 +171,8 @@
 </ul>
 <h2 id="capital-calls">Capital Calls</h2>
 <p>Processors can start Cap Calls for an asset that a client already owns.</p>
-<p>On the Asset Detail screen, the processor chooses Start &gt; Capital Call, and the Start New Capital Call screen displays:</p>
-<p>On the Start New Capital Call screen, the processor completes the required fields and clicks Create Request. The system validates required fields are completed:</p>
+<p>On the Asset Detail screen, the processor chooses <strong>Start &gt; Capital Call</strong>, and the Start New Capital Call screen displays:</p>
+<p>On the Start New Capital Call screen, the processor completes the required fields and clicks <strong>Create Request</strong>. The system validates required fields are completed:</p>
 <ul>
 <li>Asset</li>
 <li>Account #</li>
@@ -181,11 +182,11 @@
 <p>The processor sees the request in their queue, and double-clicks to open it in the Review screen.</p>
 <p>Available Actions:</p>
 <ul>
-<li>SendToQC - Moves the request into QC status.</li>
-<li>Reject - Moves the request into REJECT status.</li>
-<li>Cancel - Moves the request into CANCEL status.</li>
+<li><strong>SendToQC</strong> - Moves the request into QC status.</li>
+<li><strong>Reject</strong> - Moves the request into REJECT status.</li>
+<li><strong>Cancel</strong> - Moves the request into CANCEL status.</li>
 </ul>
-<p>The processor enters the Funding Method information, uploads and accepts Documents, answers the Checklist questions, and clicks SendToQC. The system validates:</p>
+<p>The processor enters the Funding Method information, uploads and accepts Documents, answers the Checklist questions, and clicks <strong>SendToQC</strong>. The system validates:</p>
 <ul>
 <li>Asset(s) have status of QC, Processing, or Accepted.</li>
 <li>Request has a Funding Method, and the method’s related fields are completed</li>
@@ -201,22 +202,22 @@
 <p>When the request enters QC status, it is unassigned. The QC processor sees the request in their queue, and either assigns it to another QC processor or opens it in the QC screen.</p>
 <p>Available Actions:</p>
 <ul>
-<li>Accept (This action is available only if the amount is less than $300,000) - Moves the request into PROCESSING status.</li>
-<li>SendToQC (This action is available only if the amount is greater than $300,000) - Moves the request into QC2 status.</li>
-<li>Return - Moves the request back into IN REVIEW status</li>
-<li>Reject - Moves the request into REJECT status.</li>
-<li>Cancel - Moves the request into CANCEL status.</li>
+<li><strong>Accept</strong> (This action is available only if the amount is less than $300,000) - Moves the request into PROCESSING status.</li>
+<li><strong>SendToQC</strong> (This action is available only if the amount is greater than $300,000) - Moves the request into QC2 status.</li>
+<li><strong>Return</strong> - Moves the request back into IN REVIEW status</li>
+<li><strong>Reject</strong> - Moves the request into REJECT status.</li>
+<li><strong>Cancel</strong> - Moves the request into CANCEL status.</li>
 </ul>
-<p>When the QC processor clicks Accept or SendToQC, the system validates that the asset is in ACCEPTED status, and then moves the request into EXECUTION or QC2 status.</p>
+<p>When the QC processor clicks <strong>Accept</strong> or <strong>SendToQC</strong>, the system validates that the asset is in ACCEPTED status, and then moves the request into EXECUTION or QC2 status.</p>
 <p><strong>Status: QC2</strong></p>
-<p>Requests go through this status only if the amount is greater than $300,000. In such instances, the first QC cannot accept the request; they can only SendToQC, moving it to QC2 status.</p>
+<p>Requests go through this status only if the amount is greater than $300,000. In such instances, the first QC cannot accept the request; they can only <strong>SendToQC</strong>, moving it to QC2 status.</p>
 <p>When the request enters QC2 status, it is unassigned. The QC2 processor sees the request and either assigns it to another QC2 processor or opens it in the QC screen.</p>
 <p>Available Actions:</p>
 <ul>
-<li>Accept - Moves the request into PROCESSING status.</li>
-<li>Return - Moves the request back into IN REVIEW status.</li>
-<li>Reject - Moves the request into REJECT status.</li>
-<li>Cancel - Moves the request into CANCEL status.</li>
+<li><strong>Accept</strong> - Moves the request into PROCESSING status.</li>
+<li><strong>Return</strong> - Moves the request back into IN REVIEW status.</li>
+<li><strong>Reject</strong> - Moves the request into REJECT status.</li>
+<li><strong>Cancel</strong> - Moves the request into CANCEL status.</li>
 </ul>
 <p><strong>Status: PROCESSING</strong></p>
 <p>Requests go into this status after QC or QC2 accept the request.  In PROCESSING status, the request is sent to Innotrust (Disbursement) and then automatically moved into COMPLETE status.</p>
@@ -224,13 +225,13 @@
 <p>This is the happy-path end state.</p>
 <p><strong>Exception States</strong></p>
 <ul>
-<li>Status: REJECT - From IN REVIEW, QC, or QC2 status, the processor or QC manager can Reject the request</li>
-<li>Status: CANCEL - From IN REVIEW, QC, or QC2 status, the processor or QC manager can Cancel the request.</li>
+<li>Status: REJECT - From IN REVIEW, QC, or QC2 status, the processor or QC manager can <strong>Reject</strong> the request</li>
+<li>Status: CANCEL - From IN REVIEW, QC, or QC2 status, the processor or QC manager can <strong>Cancel</strong> the request.</li>
 </ul>
 <h2 id="additional-purchase">Additional Purchase</h2>
 <p>Processors can start additional purchases for an asset the client already owns.</p>
-<p>On the Asset screen, the processor chooses Start &gt; Additional Purchase.</p>
-<p>On the Start Additional Purchase page, the processor completes the required fields and clicks Create Request. The system validates required fields are completed:</p>
+<p>On the Asset screen, the processor chooses <strong>Start &gt; Additional Purchase</strong>.</p>
+<p>On the Start Additional Purchase page, the processor completes the required fields and clicks <strong>Create Request</strong>. The system validates required fields are completed:</p>
 <ul>
 <li>Asset</li>
 <li>Account #</li>
@@ -240,11 +241,11 @@
 <p>The processor sees the request in their queue, and double-clicks to open it in the Review screen.</p>
 <p>Available Actions:</p>
 <ul>
-<li>SendToQC - Moves the request into QC status.</li>
-<li>Reject - Moves the request into REJECT status.</li>
-<li>Cancel - Moves the request into CANCEL status.</li>
+<li><strong>SendToQC</strong> - Moves the request into QC status.</li>
+<li><strong>Reject</strong> - Moves the request into REJECT status.</li>
+<li><strong>Cancel</strong> - Moves the request into CANCEL status.</li>
 </ul>
-<p>The processor enters the Funding Method information, uploads and accepts Documents, answers the Checklist questions, and clicks SendToQC. The system validates:</p>
+<p>The processor enters the Funding Method information, uploads and accepts Documents, answers the Checklist questions, and clicks <strong>SendToQC</strong>. The system validates:</p>
 <ul>
 <li>Asset(s) have status of QC, Processing, or Accepted.</li>
 <li>Request has a Funding Method, and the method’s related fields are completed</li>
@@ -260,33 +261,33 @@
 <p>When the request enters QC status, it is unassigned. The QC processor sees the request in their queue, and either assigns it to another QC processor or opens it in the QC screen.</p>
 <p>Available Actions:</p>
 <ul>
-<li>Accept (This action is available only if the amount is less than $300,000) - Moves the request into PROCESSING status.</li>
-<li>SendToQC (This action is available only if the amount is greater than $300,000) - Moves the request into QC2 status.</li>
-<li>Return - Moves the request back into IN REVIEW status</li>
-<li>Reject - Moves the request into REJECT status.</li>
-<li>Cancel - Moves the request into CANCEL status.</li>
+<li><strong>Accept</strong> (This action is available only if the amount is less than $300,000) - Moves the request into PROCESSING status.</li>
+<li><strong>SendToQC</strong> (This action is available only if the amount is greater than $300,000) - Moves the request into QC2 status.</li>
+<li><strong>Return</strong> - Moves the request back into IN REVIEW status</li>
+<li><strong>Reject</strong> - Moves the request into REJECT status.</li>
+<li><strong>Cancel</strong> - Moves the request into CANCEL status.</li>
 </ul>
-<p>When the QC processor clicks Accept or SendToQC, the system validates that the asset is in ACCEPTED status, and then moves the request into EXECUTION or QC2 status.</p>
+<p>When the QC processor clicks <strong>Accept</strong> or <strong>SendToQC</strong>, the system validates that the asset is in ACCEPTED status, and then moves the request into EXECUTION or QC2 status.</p>
 <p><strong>Status: QC2</strong></p>
-<p>Requests go through this status only if the amount is greater than $300,000. In such instances, the first QC cannot accept the request; they can only SendToQC, moving it to QC2 status.</p>
+<p>Requests go through this status only if the amount is greater than $300,000. In such instances, the first QC cannot accept the request; they can only <strong>SendToQC</strong>, moving it to QC2 status.</p>
 <p>When the request enters QC2 status, it is unassigned. The QC2 processor sees the request and either assigns it to another QC processor or opens it in the QC screen.</p>
 <p>Available Actions:</p>
 <ul>
-<li>Accept - Moves the request into PROCESSING status.</li>
-<li>Return - Moves the request back into IN REVIEW status.</li>
-<li>Reject - Moves the request into REJECT status.</li>
-<li>Cancel - Moves the request into CANCEL status.</li>
+<li><strong>Accept</strong> - Moves the request into PROCESSING status.</li>
+<li><strong>Return</strong> - Moves the request back into IN REVIEW status.</li>
+<li><strong>Reject</strong> - Moves the request into REJECT status.</li>
+<li><strong>Cancel</strong> - Moves the request into CANCEL status.</li>
 </ul>
 <p><strong>Status: PROCESSING</strong></p>
 <p>Requests go into this status after QC or QC2 accept the request.  In PROCESSING status, the request is sent to Innotrust (BuyRec and Disbursement) and then automatically moved into EXECUTION status, causing it to appear in the processor’s queue.</p>
 <p><strong>Status: EXECUTION</strong></p>
-<p>The initial processor sees the request in their queue in EXECUTION status and then has time to print/send any necessary documents.  Once the documents are sent (or If no documentation is needed), the processor clicks Complete, moving the request into COMPLETE status.</p>
+<p>The initial processor sees the request in their queue in EXECUTION status and then has time to print/send any necessary documents.  Once the documents are sent (or If no documentation is needed), the processor clicks <strong>Complete</strong>, moving the request into COMPLETE status.</p>
 <p><strong>Status: COMPLETE</strong></p>
 <p>This is the happy-path end state.</p>
 <p><strong>Exception States</strong></p>
 <ul>
-<li>Status: REJECT - From IN REVIEW, QC, or QC2 status, the processor or QC manager can Reject the request</li>
-<li>Status: CANCEL - From IN REVIEW, QC, or QC2 status, the processor or QC manager can Cancel the request.</li>
+<li>Status: REJECT - From IN REVIEW, QC, or QC2 status, the processor or QC manager can <strong>Reject</strong> the request</li>
+<li>Status: CANCEL - From IN REVIEW, QC, or QC2 status, the processor or QC manager can <strong>Cancel</strong> the request.</li>
 </ul>
 <h2 id="exchanges">Exchanges</h2>
 <p>Processors can create exchange requests to exchange one asset for another.</p>
