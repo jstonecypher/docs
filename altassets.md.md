@@ -26,19 +26,19 @@
 <p>From anywhere in the application, you can return to the homepage by clicking the Alt Asset logo in the upper left corner.</p>
 <h1 id="user-roles-and-views">User roles and views</h1>
 <p>When you view the Alt Assets home page, your user role defines what options are available to you. The user roles are Inquiry, Create, Review, Accept, Maintain, and Admin.</p>
-<p>Inquiry role</p>
+<h2 id="inquiry-role">Inquiry role</h2>
 <p>The Inquiry role can search, view assets, view requests, and add notes.</p>
 <p>Inquiry permissions are given to all users by default.  If you need additional access, contact an admin in the Alt Assets group.</p>
-<p>Create role – NOT YET IMPEMENTED</p>
+<h2 id="create-role-–-not-yet-impemented">Create role – NOT YET IMPEMENTED</h2>
 <p>The Create role has all Inquiry capabilities but can also create client requests and manage documents.</p>
-<p>Review role</p>
+<h2 id="review-role">Review role</h2>
 <p>The Review role has all Create capabilities but can also review asset and client requests.</p>
-<p>Accept role</p>
+<h2 id="accept-role">Accept role</h2>
 <p>The Accept role has all Review capabilities but can also provide the additional QC review required for large transactions.</p>
 <p>When an item is “In QC” status, opening the item shows Create and Accept buttons. The accept dropdown includes Return, Cancel, and Reject.</p>
-<p>Maintain role – NOT YET IMPEMENTED</p>
+<h2 id="maintain-role-–-not-yet-impemented">Maintain role – NOT YET IMPEMENTED</h2>
 <p>The Maintain role has all Inquiry capabilities but with additional edit permissions for accepted assets and completed requests.</p>
-<p>Admin role</p>
+<h2 id="admin-role">Admin role</h2>
 <p>The Admin role has all capabilities in the other roles plus the ability to change roles for other team members.</p>
 <h1 id="search">Search</h1>
 <p>The alt assets Search tool can find partial matches for asset name, CUSIP, account number, and sponsor name.  Also, you can limit search results using filter checkboxes.</p>
@@ -49,7 +49,7 @@
 <p>The Current Holders list includes Start buttons from which Additional Purchases, Exchanges, and Capital Calls can be initiated.</p>
 <h1 id="request-type-workflows">Request Type Workflows</h1>
 <p>Workflow varies for each request type: Commitment, New Purchase, Additional Purchase, Capital Call, Exchange, Asset, and Transfer Review.</p>
-<p>Commitments</p>
+<h2 id="commitments">Commitments</h2>
 <p>Processors can start a commitment-only client request.</p>
 <p>On the Asset Detail screen, the processor chooses Create &gt; Commitment., and the Start New Commitment screen displays:</p>
 <p>On the Start New Commitment screen, the processor completes the required fields and clicks Create Request. The system validates required fields are completed:</p>
@@ -99,7 +99,7 @@
 <li>Status: REJECT - From IN REVIEW or QC status, the processor or QC manager can Reject the request</li>
 <li>Status: CANCEL - From IN REVIEW or QC status, the processor or QC manager can Cancel the request.</li>
 </ul>
-<p>New Purchases</p>
+<h2 id="new-purchases">New Purchases</h2>
 <p>Processors can start a new purchase for an asset a client does not currently own.</p>
 <p>On the Asset Detail screen, the processor chooses Create &gt; Purchase, and the Start New Purchase screen displays.</p>
 <p>On the Start New Purchase screen, the processor completes the required fields and clicks Create Request. The system validates required fields are completed:</p>
@@ -168,7 +168,7 @@
 <li>Status: CANCEL - From IN REVIEW, QC, or QC2 status, the processor or QC manager can Cancel the request.</li>
 <li>Status: RESIGNED - From PENDING CONFIRMATION status, the processor can RESIGN the request, sending it to an end state of RESIGNED.</li>
 </ul>
-<p>Capital Calls</p>
+<h2 id="capital-calls">Capital Calls</h2>
 <p>Processors can start Cap Calls for an asset that a client already owns.</p>
 <p>On the Asset Detail screen, the processor chooses Start &gt; Capital Call, and the Start New Capital Call screen displays:</p>
 <p>On the Start New Capital Call screen, the processor completes the required fields and clicks Create Request. The system validates required fields are completed:</p>
@@ -227,7 +227,7 @@
 <li>Status: REJECT - From IN REVIEW, QC, or QC2 status, the processor or QC manager can Reject the request</li>
 <li>Status: CANCEL - From IN REVIEW, QC, or QC2 status, the processor or QC manager can Cancel the request.</li>
 </ul>
-<p>Additional Purchase</p>
+<h2 id="additional-purchase">Additional Purchase</h2>
 <p>Processors can start additional purchases for an asset the client already owns.</p>
 <p>On the Asset screen, the processor chooses Start &gt; Additional Purchase.</p>
 <p>On the Start Additional Purchase page, the processor completes the required fields and clicks Create Request. The system validates required fields are completed:</p>
@@ -288,7 +288,7 @@
 <li>Status: REJECT - From IN REVIEW, QC, or QC2 status, the processor or QC manager can Reject the request</li>
 <li>Status: CANCEL - From IN REVIEW, QC, or QC2 status, the processor or QC manager can Cancel the request.</li>
 </ul>
-<p>Exchanges</p>
+<h2 id="exchanges">Exchanges</h2>
 <p>Processors can create exchange requests to exchange one asset for another.</p>
 <p>On the Asset screen, the processor chooses Start &gt; Exchange.</p>
 <p>On the Start New Exchange page, the processor completes the required fields and clicks Create Request. The system validates required fields are completed:</p>
@@ -338,7 +338,7 @@
 <li>Status: REJECT - From IN REVIEW or QC status, the processor or QC manager can Reject the request</li>
 <li>Status: CANCEL - From IN REVIEW or QC status, the processor or QC manager can Cancel the request.</li>
 </ul>
-<p>Assets</p>
+<h2 id="assets">Assets</h2>
 <p>When sponsors request for an asset to be held at PENSCO, processors can add the asset and trigger the asset review process.</p>
 <p>On the AAA main toolbar, the processor chooses Create Asset.</p>
 <p>On the Find or Create an Asset screen, the processor starts entering the asset name or CUSIP, and a dropdown auto-populates with possible matches with assets that already exist in PENSCO, and also provides an Add New Asset option to create new ones.  Select an asset to open it, or click Add New Asset to go to the Create New Asset screen.</p>
@@ -388,7 +388,7 @@
 <li>Status: REJECT - From IN REVIEW or QC status, the processor or QC manager can Reject the request</li>
 <li>Status: CANCEL - From IN REVIEW or QC status, the processor or QC manager can Cancel the request.</li>
 </ul>
-<p>Transfer Review</p>
+<h2 id="transfer-review">Transfer Review</h2>
 <p>When the Transfers Admin (TA) app receives an incoming transfer which contains alternative assets, those assets go into IN REVIEW status, which includes them in the Alt Assets Admin (AAA) workflow, in which the processor can review the account and asset combination.</p>
 <p><strong>Status: IN REVIEW</strong></p>
 <p>The processor who started the transfer then finds the transfer in AAA and either assigns it to another processor or double-clicks to open it in the Review screen.</p>
@@ -429,12 +429,12 @@
 <p>See section 6.6 - Assets</p>
 <h1 id="asset-sponsors">Asset Sponsors</h1>
 <p>The Asset Sponsors functionality allows you to find, add, and manage asset sponsors.</p>
-<p>Asset Sponsors List</p>
+<h2 id="asset-sponsors-list">Asset Sponsors List</h2>
 <p>Select Asset Sponsors from the main header, and the Asset Sponsors screen displays the list of sponsors (showing Sponsor Name, TIN, and state) currently in the system. You can filter the list by typing in part of the sponsor name.</p>
 <p>In header, select Asset Sponsors to see list of all asset sponsors.</p>
 <p>Use the filter bar to type and find a specific sponsor. Click on the sponsor name to go to the detail page.</p>
 <p>If the sponsor is not in the system, you can also + Add New Sponsor.</p>
-<p>Sponsor Detail</p>
+<h2 id="sponsor-detail">Sponsor Detail</h2>
 <p>The Sponsor Detail screen allows you to view sponsor info, edit contact information, and add individual contacts.</p>
 <p>Components:</p>
 <ul>
@@ -442,14 +442,14 @@
 <li>Assets (list of all pending and accepted Assets associated with Sponsor)</li>
 <li>Contacts (individual contacts associated with the overall Sponsor entity)</li>
 </ul>
-<p>Add Sponsor</p>
+<h2 id="add-sponsor">Add Sponsor</h2>
 <p>On the Sponsor Detail screen, choose + Add New Sponsor, and the New Sponsor modal displays. Just sponsor name is required. Make sure to use a unique TIN to make sure it sends to Innotrust.</p>
 <h1 id="status-management">Status Management</h1>
 <p>Alt Assets Admin manages workflow processing by putting client requests through an ordered series of states until reaching a completion state. The current state determines what options are available to users.</p>
 <p>All client requests start in IN REVIEW status, go through either one or two QC states. Unless they are canceled or rejected, they eventually reach an end state (ACCEPTED for assets, or COMPLETE for all other requests).</p>
 <p>After QC and before completion, requests follow a variety of paths based on request type. Some requests have a PROCESSING state during which data is sent to Innotrust.  Some requests have an EXECUTION state which gives processors time to print and send any necessary documents to clients.</p>
 <p>Because new purchases require a signed confirmation from the sponsor, they have an additional state for PENDING CONFIRMATION. For the rare instance when the confirmation is not received, there is also a RESIGN state.</p>
-<p>Alt asset client request states</p>
+<h2 id="alt-asset-client-request-states">Alt asset client request states</h2>
 <p><strong>STATUS: None</strong> - While the request is being created (and therefore doesn’t have a status yet), minimal information is required to be able to click the Create button.</p>
 <p><strong>STATUS: In Review</strong> - The request has been created, and a processor is gathering information and documents to prepare for submission. Options Available: SendToQC, Cancel, Reject</p>
 <p><strong>STATUS: QC</strong> - The request has been submitted and needs approval. For new purchases, additional purchases, and cap calls greater than $300k, a second QC review is required, so Accept is replaced with SendToQC. Options Available: Accept, SendToQC, Return, Cancel, Reject</p>
@@ -464,17 +464,17 @@
 <p><strong>STATUS: Resigned</strong> - The processor has resigned on a new purchase because signed confirmation documents were never received from the sponsor. This is an end state. Options Available: None</p>
 <h1 id="innotrust-integration">Innotrust Integration</h1>
 <p>AAA writes to Innotrust when requests enter PROCESSING status.</p>
-<p>Asset Sponsors</p>
+<h2 id="asset-sponsors-1">Asset Sponsors</h2>
 <p>When asset sponsors are created or updated, the information is sent to Innotrust. It creates or updates a “contact” record for the sponsor and their info. Individuals added to an asset or asset sponsor are not sent to Innotrust as actual contacts. Information for these individuals is added, updated, and deleted solely within AAA.</p>
-<p>Assets</p>
+<h2 id="assets-1">Assets</h2>
 <p>When an asset is accepted and enters its final state, then its information (name, price, CUSIP) is sent to Innotrust to create a “security” record. The asset is also connected to the asset sponsor contact.</p>
-<p>Client Requests</p>
+<h2 id="client-requests">Client Requests</h2>
 <p>When a client request enters PROCESSING status, then its information is sent to Innotrust to create “transaction,” which vary slightly according to the request type:</p>
 <ul>
 <li>New and Additional Purchases send out money (check or wire) and add shares to the client’s account.</li>
 <li>Capital Calls send out money (check or wire)</li>
 <li>Exchanges remove shares of one asset and add shares of another.</li>
 </ul>
-<h1 id="note-about-safe-agreements-and-convertible-notes">Note about SAFE Agreements and Convertible Notes</h1>
+<h3 id="note-about-safe-agreements-and-convertible-notes">Note about SAFE Agreements and Convertible Notes</h3>
 <p>Because requests for SAFE and CN asset types require extra paperwork and are beyond the initial scope of AAA, such requests must be processed manually in Innotrust.</p>
 
