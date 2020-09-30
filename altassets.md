@@ -292,8 +292,8 @@ This is the happy-path end state.</p>
 </ul>
 <h2 id="exchanges">Exchanges</h2>
 <p>Processors can create exchange requests to exchange one asset for another.</p>
-<p>On the Asset screen, the processor chooses Start &gt; Exchange.</p>
-<p>On the Start New Exchange page, the processor completes the required fields and clicks Create Request. The system validates required fields are completed:</p>
+<p>On the Asset screen, the processor chooses <strong>Start &gt; Exchange</strong>.</p>
+<p>On the Start New Exchange page, the processor completes the required fields and clicks <strong>Create Request</strong>. The system validates required fields are completed:</p>
 <ul>
 <li>Asset</li>
 <li>Account #</li>
@@ -303,11 +303,11 @@ This is the happy-path end state.</p>
 <p>The processor sees the request in their queue, and double-clicks to open it in the Review screen.</p>
 <p>Available Actions:</p>
 <ul>
-<li>SendToQC - Moves the request into QC status.</li>
-<li>Reject - Moves the request into REJECT status.</li>
-<li>Cancel - Moves the request into CANCEL status.</li>
+<li><strong>SendToQC</strong> - Moves the request into QC status.</li>
+<li><strong>Reject</strong> - Moves the request into REJECT status.</li>
+<li><strong>Cancel</strong> - Moves the request into CANCEL status.</li>
 </ul>
-<p>The processor enters the Funding Method information, uploads and accepts Documents, answers the Checklist questions, and clicks SendToQC. The system validates:</p>
+<p>The processor enters the Funding Method information, uploads and accepts Documents, answers the Checklist questions, and clicks <strong>SendToQC</strong>. The system validates:</p>
 <ul>
 <li>Asset(s) have status of QC, Processing, or Accepted.</li>
 <li>Request has a Funding Method, and the method’s related fields are completed</li>
@@ -323,26 +323,26 @@ This is the happy-path end state.</p>
 <p>When the request enters QC status, it is unassigned. The QC processor sees the request in their queue, and either assigns it to another QC processor or opens it in the QC screen.</p>
 <p>Available Actions:</p>
 <ul>
-<li>Accept - Moves the request into PROCESSING status.</li>
-<li>Return - Moves the request back into IN REVIEW status</li>
-<li>Reject - Moves the request into REJECT status.</li>
-<li>Cancel - Moves the request into CANCEL status.</li>
+<li><strong>Accept</strong> - Moves the request into PROCESSING status.</li>
+<li><strong>Return</strong> - Moves the request back into IN REVIEW status</li>
+<li><strong>Reject</strong> - Moves the request into REJECT status.</li>
+<li><strong>Cancel</strong> - Moves the request into CANCEL status.</li>
 </ul>
-<p>When the QC processor clicks Accept, the system validates that the asset is in ACCEPTED status, and then moves the request into PROCESSING status.</p>
+<p>When the QC processor clicks <strong>Accept</strong>, the system validates that the asset is in ACCEPTED status, and then moves the request into PROCESSING status.</p>
 <p><strong>Status: PROCESSING</strong></p>
 <p>Requests go into this status after QC accepts the request.  In PROCESSING status, the request is sent to Innotrust (RFP and DFP)  and then automatically moved into EXECUTION status, causing it to appear in the processor’s queue.</p>
 <p><strong>Status: EXECUTION</strong></p>
-<p>The initial processor sees the request in their queue in EXECUTION status and then has time to print/send any necessary documents.  Once the documents are sent (or If no documentation is needed), the processor clicks Complete, moving the request into COMPLETE status.</p>
+<p>The initial processor sees the request in their queue in EXECUTION status and then has time to print/send any necessary documents.  Once the documents are sent (or If no documentation is needed), the processor clicks <strong>Complete</strong>, moving the request into COMPLETE status.</p>
 <p><strong>Status: COMPLETE</strong></p>
 <p>This is the happy-path end state.</p>
 <p><strong>Exception States</strong></p>
 <ul>
-<li>Status: REJECT - From IN REVIEW or QC status, the processor or QC manager can Reject the request</li>
-<li>Status: CANCEL - From IN REVIEW or QC status, the processor or QC manager can Cancel the request.</li>
+<li>Status: REJECT - From IN REVIEW or QC status, the processor or QC manager can <strong>Reject</strong> the request</li>
+<li>Status: CANCEL - From IN REVIEW or QC status, the processor or QC manager can <strong>Cancel</strong> the request.</li>
 </ul>
 <h2 id="assets">Assets</h2>
 <p>When sponsors request for an asset to be held at PENSCO, processors can add the asset and trigger the asset review process.</p>
-<p>On the AAA main toolbar, the processor chooses Create Asset.</p>
+<p>On the AAA main toolbar, the processor chooses <strong>Create Asset</strong>.</p>
 <p>On the Find or Create an Asset screen, the processor starts entering the asset name or CUSIP, and a dropdown auto-populates with possible matches with assets that already exist in PENSCO, and also provides an Add New Asset option to create new ones.  Select an asset to open it, or click Add New Asset to go to the Create New Asset screen.</p>
 <p>On the Create New Asset screen, the processor completes the required fields and clicks Create. The system validates required fields are completed:</p>
 <ul>
